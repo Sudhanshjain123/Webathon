@@ -1,16 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>CodeRed</title>
-    <meta name="description" content="CodeRed" />
-    
-  </head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health_Tracker.com </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body style="padding-bottom: 1000px;
+    background-color: rgb(248, 224, 157);">
+    <header class="header">H e a l t h G u i d e</header>
+    <div class="user-input-div">
+        <p class="p">Water Intake / day(no. of glasses):</p>
+        <input id="water" class="input" type="text" placeholder="8" onkeydown="Water()">
+    </div>
+     <div class="user-input-div">
+        <p class="p">Daily Steps:</p>
+        <input id="steps" type="text" class="input" placeholder="8000" onkeydown="Steps()">
+    </div>
+     <div class="user-input-div">
+        <p class="p">Sleep Hours:</p>
+        <input id="sleep" type="text" class="input" placeholder="7" onkeydown="Sleep()">
+    </div>
+     <div class="user-input-div">
+        <p id="mood" class="p">How you are feeling(happy/sad/neutral):</p>
+        <input type="text" class="input" placeholder="h/s/n" onkeydown="Mood()">
+    </div>
+    <button id="submit-button" class="submit-button">
+        Submit
+    </button>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script src="index.js"></script>
+    </body>
 </html>
